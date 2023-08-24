@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@dream-dealers/ui-components": ["libs/ui-components/src/index.ts"],
+      "@dream-dealers/ui-components/server": [
+        "libs/ui-components/src/server.ts"
+      ],
+      "@dream-dealers/ui-tools": ["libs/ui-tools/src/index.ts"]
+    },
     "strict": true
   },
   "exclude": ["node_modules", "tmp"]
