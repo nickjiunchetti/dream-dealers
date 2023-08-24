@@ -1,5 +1,3 @@
-import './ui-components.css';
-
 /* eslint-disable-next-line */
 export interface UiComponentsProps {}
 
