@@ -1,0 +1,23 @@
+{
+  "name": "whatsapp-business-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": ["whatsapp-business"],
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "backend/whatsapp-business-e2e/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["backend/whatsapp-business-e2e/**/*.{js,ts}"]
+      }
+    }
+  }
+}
