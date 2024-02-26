@@ -1,0 +1,11 @@
+export type messageType =
+  | 'audio'
+  | 'text'
+  | 'image'
+  | 'video'
+  | 'contacts'
+  | 'document'
+  | 'sticker'
+  | 'interactive'
+  | 'location'
+  | 'template'
