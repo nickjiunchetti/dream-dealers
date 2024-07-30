@@ -43,13 +43,16 @@ export const forwardMessage = async (phoneNumber: string, message: any) => {
 
   // for image, videos
   if (messageContent.caption) {
+    // eslint-disable-next-line @typescript-eslint/no-extra-semi
     ;(payload[type] as { id: string; caption?: string }).caption =
       messageContent.caption
   }
 
   // for text messages
   if (messageContent.body) {
-    ;(payload[type] as { id: string; body?: any }).body = messageContent.body
+    // eslint-disable-next-line @typescript-eslint/no-extra-semi
+    ;(payload[type] as { id: string; body?: unknown }).body =
+      messageContent.body
   }
 
   sendMessage(phoneNumber, payload)
