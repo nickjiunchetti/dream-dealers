@@ -1,7 +1,7 @@
 {
   "name": "whatsapp-business",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "backend/whatsapp-business/src",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend/whatsapp-business/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -10,12 +10,12 @@
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
-        "outputPath": "dist/backend/whatsapp-business",
+        "outputPath": "dist/apps/backend/whatsapp-business",
         "format": ["cjs"],
         "bundle": false,
-        "main": "backend/whatsapp-business/src/main.ts",
-        "tsConfig": "backend/whatsapp-business/tsconfig.app.json",
-        "assets": ["backend/whatsapp-business/src/assets"],
+        "main": "apps/backend/whatsapp-business/src/main.ts",
+        "tsConfig": "apps/backend/whatsapp-business/tsconfig.app.json",
+        "assets": ["apps/backend/whatsapp-business/src/assets"],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,
@@ -60,12 +60,12 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "backend/whatsapp-business/jest.config.ts"
+        "jestConfig": "apps/backend/whatsapp-business/jest.config.ts"
       }
     },
     "docker-build": {
       "dependsOn": ["build"],
-      "command": "docker build -f backend/whatsapp-business/Dockerfile . -t whatsapp-business"
+      "command": "docker build -f apps/backend/whatsapp-business/Dockerfile . -t whatsapp-business"
     }
   },
   "tags": []
