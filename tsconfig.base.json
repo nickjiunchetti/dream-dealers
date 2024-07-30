@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dream-dealers/pix": ["apps/backend/pix/src/index.ts"],
+      "@dream-dealers/pix": ["libs/pix/src/index.ts"],
       "@dream-dealers/ui-components": ["libs/ui-components/src/index.ts"],
       "@dream-dealers/ui-components/server": [
         "libs/ui-components/src/server.ts"

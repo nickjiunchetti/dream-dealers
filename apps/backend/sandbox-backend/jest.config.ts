@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'pix',
+  displayName: 'sandbox-backend',
   preset: '../../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../coverage/apps/backend/pix',
+  coverageDirectory: '../../../coverage/apps/backend/sandbox-backend',
 }
