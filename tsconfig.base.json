@@ -19,7 +19,8 @@
       "@dream-dealers/ui-components/server": [
         "libs/ui-components/src/server.ts"
       ],
-      "@dream-dealers/ui-tools": ["libs/ui-tools/src/index.ts"]
+      "@dream-dealers/ui-tools": ["libs/ui-tools/src/index.ts"],
+      "@pix": ["backend/pix/src/index.ts"]
     },
     "strict": true
   },
